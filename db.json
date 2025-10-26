@@ -1,0 +1,56 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Clean Code",
+      "authorId": 1,
+      "price": 250000,
+      "stock": 10,
+      "category": "Software Engineering"
+    },
+    {
+      "id": 2,
+      "title": "The Pragmatic Programmer",
+      "authorId": 2,
+      "price": 300000,
+      "stock": 5,
+      "category": "Programming"
+    },
+    {
+      "id": 3,
+      "title": "Refactoring",
+      "authorId": 3,
+      "price": 270000,
+      "stock": 8,
+      "category": "Clean Architecture"
+    }
+  ],
+
+  "authors": [
+    { "id": 1, "name": "Robert C. Martin", "country": "USA" },
+    { "id": 2, "name": "Andrew Hunt", "country": "USA" },
+    { "id": 3, "name": "Martin Fowler", "country": "UK" }
+  ],
+
+  "customers": [
+    { "id": 1, "name": "Nguyen Van A", "email": "a@gmail.com", "phone": "0901234567" },
+    { "id": 2, "name": "Tran Thi B", "email": "b@gmail.com", "phone": "0912345678" },
+    { "id": 3, "name": "Le Minh C", "email": "c@gmail.com", "phone": "0934567890" }
+  ],
+
+  "orders": [
+    { "id": 1, "customerId": 1, "orderDate": "2025-10-25", "total": 550000 },
+    { "id": 2, "customerId": 2, "orderDate": "2025-10-26", "total": 300000 }
+  ],
+
+  "orderDetails": [
+    { "id": 1, "orderId": 1, "bookId": 1, "quantity": 1, "price": 250000 },
+    { "id": 2, "orderId": 1, "bookId": 3, "quantity": 1, "price": 300000 },
+    { "id": 3, "orderId": 2, "bookId": 2, "quantity": 1, "price": 300000 }
+  ],
+
+  "reviews": [
+    { "id": 1, "bookId": 1, "customerId": 1, "rating": 5, "comment": "Rất hay và dễ hiểu!" },
+    { "id": 2, "bookId": 2, "customerId": 2, "rating": 4, "comment": "Nội dung chất lượng, ví dụ thực tế." }
+  ]
+}
