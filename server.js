@@ -4,11 +4,6 @@ const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 const PORT = process.env.PORT || 3000;
 
-// Giả lập backend thật — thêm độ trễ 500ms
-server.use((req, res, next) => {
-  setTimeout(next, 500);
-});
-
 // Middleware xác thực Token
 server.use((req, res, next) => {
   // Cho phép truy cập mà không cần token cho GET (public)
